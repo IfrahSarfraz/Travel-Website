@@ -81,7 +81,8 @@ The system consists of:
 > <img width="532" height="343" alt="Image" src="https://github.com/user-attachments/assets/957cb9e4-4e64-462a-9053-b8960fc96f35" />
 
 > ### Flight Page
->
+><img width="539" height="343" alt="Image" src="https://github.com/user-attachments/assets/93b84725-9fa2-42f6-a355-853bdb4379ac" />
+
 > ### Car-Rental Page
 >
 > ### Attraction Page
