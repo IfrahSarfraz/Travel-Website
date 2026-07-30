@@ -90,9 +90,10 @@ The system consists of:
 ><img width="649" height="441" alt="Image" src="https://github.com/user-attachments/assets/fbd4cb0c-9adc-4801-b797-9a8e38ce7d38" />
 
 > ### Taxi Page
->
+><img width="604" height="407" alt="Image" src="https://github.com/user-attachments/assets/e31308ae-b641-4393-9f7f-643e801d4196" />
+
 > ### Dashboard Page
->
+><img width="709" height="1216" alt="Image" src="https://github.com/user-attachments/assets/0fd8c441-3818-47de-ab0c-2cedeb79c4af" />
 > 
 ---
 
