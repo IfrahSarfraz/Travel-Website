@@ -172,7 +172,7 @@ Travel_Website/
 
 ## Documentation
 
-Detailed project documentation will be available in `Project_Report.pdf`[WE LAB PROJECT REPORT \[23-SE-9&55\].pdf](https://github.com/user-attachments/files/30557449/WE.LAB.PROJECT.REPORT.23-SE-9.55.pdf) once added to the repository. Planned contents:
+Detailed project documentation will be available in [Project_Report.pdf](https://github.com/user-attachments/files/30557449/WE.LAB.PROJECT.REPORT.23-SE-9.55.pdf) . Planned contents:
 
 * Problem Statement
 * System Design
