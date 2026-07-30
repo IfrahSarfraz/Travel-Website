@@ -87,7 +87,8 @@ The system consists of:
 ><img width="539" height="343" alt="Image" src="https://github.com/user-attachments/assets/93b84725-9fa2-42f6-a355-853bdb4379ac" />
 
 > ### Attraction Page
->
+><img width="649" height="441" alt="Image" src="https://github.com/user-attachments/assets/fbd4cb0c-9adc-4801-b797-9a8e38ce7d38" />
+
 > ### Taxi Page
 >
 > ### Dashboard Page
