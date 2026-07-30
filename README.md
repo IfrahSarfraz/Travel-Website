@@ -84,7 +84,8 @@ The system consists of:
 ><img width="539" height="343" alt="Image" src="https://github.com/user-attachments/assets/93b84725-9fa2-42f6-a355-853bdb4379ac" />
 
 > ### Car-Rental Page
->
+><img width="539" height="343" alt="Image" src="https://github.com/user-attachments/assets/93b84725-9fa2-42f6-a355-853bdb4379ac" />
+
 > ### Attraction Page
 >
 > ### Taxi Page
