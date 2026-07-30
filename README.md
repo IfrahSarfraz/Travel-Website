@@ -68,14 +68,25 @@ The system consists of:
 ---
 
 ## Screenshots
-
-> Screenshots have not been added to this repository yet. Once available, add them to a `screenshots/` folder at the project root and reference them below, for example:
+> ### Sign-up Page
 >
+> ### Login Page
+> 
 > ### Home Page
-> ![Home Page]<img width="603" height="565" alt="Image" src="https://github.com/user-attachments/assets/9f8313e9-9bd8-43f1-8789-214d6910688a" />
+> <img width="603" height="565" alt="Image" src="https://github.com/user-attachments/assets/9f8313e9-9bd8-43f1-8789-214d6910688a" />
+> ### Hotel Page
 >
-> Planned pages to capture: Sign Up, Sign In, Home, Hotel Booking, Flight Booking, Car Rental, Attractions, Airport Taxi, Dashboard.
-
+> ### Flight Page
+>
+> ### Car-Rental Page
+>
+> ### Attraction Page
+>
+> ### Taxi Page
+>
+> ### Dashboard Page
+>
+> 
 ---
 
 ## Repository Structure
