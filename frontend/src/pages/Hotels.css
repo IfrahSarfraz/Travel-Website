@@ -1,0 +1,484 @@
+/* Add these styles to your existing Hotels.css file */
+
+/* Search Message */
+.search-message {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+.search-message i {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.message-title {
+  color: #856404;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.message-subtitle {
+  color: #856404;
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.message-subtitle:last-child {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clear Search Button */
+.clear-search-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.clear-search-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clear-search-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Loading Container */
+.loading-container {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.loading-container i {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.loading-container p {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* No Hotels */
+.no-hotels {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.no-hotels i {
+  font-size: 3rem;
+  color: #e74c3c;
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+
+.no-hotels p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments for search message */
+@media (max-width: 768px) {
+  .search-message {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .search-message i {
+    margin-top: 0;
+  }
+}
+
+/* Keep all existing CSS styles below */
+/* Main container */
+.hotels-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* SEARCH BOX - Same as flights */
+.search-box {
+  background: linear-gradient(135deg, #2871a1 0%, rgb(120, 218, 183) 100%);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+.search-box h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 12px;
+}
+
+.search-bar {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e1e8ed;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-with-icon {
+  flex: 1;
+  position: relative;
+  min-width: 250px;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 14px 14px 45px !important;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #95a5a6;
+  opacity: 0.8;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.search-button {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  white-space: nowrap;
+  height: 52px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.search-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+}
+
+/* Hotels Grid */
+.hotels-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Hotel Row - 3 sections */
+.hotel-row {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 0.5fr;
+
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e8ed;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Left Section - Image Only */
+.hotel-image-section {
+  padding: 0;
+  overflow: hidden;
+}
+
+.hotel-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hotel-main-image:hover {
+  transform: scale(1.05);
+}
+
+/* Middle Section - Details & Inputs */
+.hotel-details-section {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hotel-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.hotel-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.hotel-location i {
+  color: #e74c3c;
+}
+
+.booking-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.9rem;
+}
+
+.input-group label i {
+  color: #3498db;
+}
+
+.booking-input {
+  padding: 12px 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Right Section - Price & Button */
+.hotel-booking-section {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.price-container {
+  text-align: center;
+  width: 100%;
+}
+
+.price-label {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price-amount {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.book-now-btn {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  white-space: nowrap;
+  height: 52px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.book-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+}
+
+.book-now-btn i {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hotel-row {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "image details"
+      "image booking";
+  }
+  
+  .hotel-image-section {
+    grid-area: image;
+  }
+  
+  .hotel-details-section {
+    grid-area: details;
+    border-right: none;
+  }
+  
+  .hotel-booking-section {
+    grid-area: booking;
+    border-top: 1px solid #eaeaea;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotel-row {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "image"
+      "details"
+      "booking";
+  }
+  
+  .booking-inputs {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-input-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-with-icon {
+    min-width: 100%;
+  }
+}

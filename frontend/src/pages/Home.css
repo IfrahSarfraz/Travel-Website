@@ -1,0 +1,474 @@
+.home-page {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(1, 45, 110, 0.85), rgba(168, 177, 182, 0.5)), 
+              url('https://i.natgeofe.com/n/2c818afc-ec40-4c9c-b7d3-4513fcd4c3e2/NationalGeographic_2275505.jpg') center/cover;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+}
+
+.search-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-tab {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-tab:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.search-tab.active {
+  background: white;
+  color: #003b95;
+}
+
+.tab-icon {
+  font-size: 1.1rem;
+}
+
+.search-form {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.search-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-field {
+  text-align: left;
+}
+
+.search-field label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.search-field input {
+  color: #989a9c;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-field input:focus {
+  outline: none;
+  border-color: #006ce4;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #006ce4 0%, #003b95 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 108, 228, 0.3);
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #003b95;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* SIMPLIFIED - All cards in a 5-column grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* All cards take equal space */
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 250px; /* Ensures consistent height */
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  border-color: #006ce4;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #006ce4;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: #212529;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feature-card p {
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.feature-link {
+  color: #006ce4;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Destinations Section */
+.destinations-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.destination-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.destination-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.destination-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 2rem;
+}
+
+.destination-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.destination-info p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.explore-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  color: #003b95;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #006ce4;
+  color: white;
+}
+
+/* How It Works */
+.how-it-works {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #006ce4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 1.5rem;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  color: #212529;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.step p {
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.benefit {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 2rem;
+  border-left: 4px solid #2d378f;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit h3 {
+  font-size: 1.3rem;
+  color: #1d2252;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benefit p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+/* Only first card has buttons */
+.benefit:first-child .benefit-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.benefit:not(:first-child) .benefit-buttons {
+  display: none;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: #006ce4;
+  color: white;
+  border: 2px solid #006ce4;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #006ce4;
+  border: 2px solid #006ce4;
+}
+
+.btn-secondary:hover {
+  background: #006ce4;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .search-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-tab {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+  
+  .search-fields {
+    grid-template-columns: 1fr;
+  }
+  
+  .destinations-grid {
+    grid-template-columns: 2fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  
+  .benefits-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}

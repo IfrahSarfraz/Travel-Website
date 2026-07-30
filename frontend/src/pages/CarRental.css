@@ -1,0 +1,474 @@
+/* Add to existing CarRental.css file */
+
+/* Search Message */
+.search-message {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+.search-message i {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.message-title {
+  color: #856404;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.message-subtitle {
+  color: #856404;
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.message-subtitle:last-child {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clear Search Button */
+.clear-search-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.clear-search-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clear-search-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Keep all existing CSS styles below */
+/* Container */
+.car-rental-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.search-box {
+  background: linear-gradient(135deg, #2871a1 0%, rgb(120, 218, 183) 100%);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+.search-box h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 12px;
+}
+
+.search-bar {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e1e8ed;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-with-icon {
+  flex: 1;
+  position: relative;
+  min-width: 250px;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 14px 14px 45px !important;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #95a5a6;
+  opacity: 0.8;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.search-input:focus + i {
+  color: #3498db;
+}
+
+.search-button {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  white-space: nowrap;
+  height: 52px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.search-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+}
+
+/* Available Cars Section */
+.available-cars-section {
+  margin-top: 20px;
+}
+
+.available-cars-section h2 {
+  color:  #1d2252;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+/* Car Grid - 3 cars per row */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Car Card */
+.car-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #eaeaea;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.car-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover .car-image {
+  transform: scale(1.05);
+}
+
+.unavailable-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4757;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.car-details {
+  padding: 20px;
+}
+
+.car-details h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.car-specs {
+  margin-bottom: 20px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.spec-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.spec-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.spec-value {
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.price-section {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffbc3b;
+}
+
+.price-label {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.book-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffbc3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.book-button:hover:not(.disabled) {
+  background-color: #ffa500;
+  transform: translateY(-2px);
+}
+
+.book-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Booking Form */
+.booking-form {
+  margin-top: 15px;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.date-field {
+  flex: 1;
+}
+
+.date-field label {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.date-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.confirm-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirm-button:hover {
+  background: linear-gradient(135deg, #218838 0%, #28a745 100%);
+  transform: translateY(-2px);
+}
+
+/* Loading and No Data States */
+.loading-text, .no-cars-text {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .car-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .search-input-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-with-icon {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .search-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-with-icon {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .search-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .car-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .date-inputs {
+    flex-direction: column;
+  }
+  
+  .search-message {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .car-rental-container {
+    padding: 10px;
+  }
+  
+  .search-box {
+    padding: 15px;
+  }
+  
+  .search-bar {
+    padding: 15px;
+  }
+  
+  .car-card {
+    margin-bottom: 15px;
+  }
+}
