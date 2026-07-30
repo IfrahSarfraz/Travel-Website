@@ -73,7 +73,7 @@ The system consists of:
 >
 > ```markdown
 > ### Home Page
-> ![Home Page](screenshots/home-page.png)
+> ![Home Page]<img width="603" height="565" alt="Image" src="https://github.com/user-attachments/assets/9f8313e9-9bd8-43f1-8789-214d6910688a" />
 > ```
 >
 > Planned pages to capture: Sign Up, Sign In, Home, Hotel Booking, Flight Booking, Car Rental, Attractions, Airport Taxi, Dashboard.
