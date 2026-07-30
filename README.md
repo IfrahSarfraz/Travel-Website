@@ -78,7 +78,7 @@ The system consists of:
 > <img width="603" height="565" alt="Image" src="https://github.com/user-attachments/assets/9f8313e9-9bd8-43f1-8789-214d6910688a" />
 
 > ### Hotel Page
->
+> <img width="532" height="343" alt="Image" src="https://github.com/user-attachments/assets/957cb9e4-4e64-462a-9053-b8960fc96f35" />
 
 > ### Flight Page
 >
