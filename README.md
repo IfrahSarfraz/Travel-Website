@@ -69,14 +69,17 @@ The system consists of:
 
 ## Screenshots
 > ### Sign-up Page
->
+><img width="759" height="521" alt="Image" src="https://github.com/user-attachments/assets/da304c8c-0b37-4878-8c32-eb8f6bc0eded" />
+
 > ### Login Page
 > <img width="694" height="310" alt="Image" src="https://github.com/user-attachments/assets/fadbd146-933e-4a58-aba9-b9e8d0e1e5ef" />
 
 > ### Home Page
 > <img width="603" height="565" alt="Image" src="https://github.com/user-attachments/assets/9f8313e9-9bd8-43f1-8789-214d6910688a" />
+
 > ### Hotel Page
 >
+
 > ### Flight Page
 >
 > ### Car-Rental Page
