@@ -112,18 +112,15 @@ Travel_Website/
 │   ├── server.js           # App entry point
 │   └── .gitignore          # Excludes node_modules and .env
 │
-├── frontend/                # React (Vite) frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/      # Header, Footer, TaxiBooking, etc.
-│   │   ├── context/         # Auth context
-│   │   ├── pages/           # Home, Hotels, Flights, CarRental,
-│   │   │                    # Attractions, Taxi, Dashboard, Login, Register
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   └── .gitignore
-│
-└── Project_Report.pdf       # Detailed project documentation (to be added)
+└── frontend/                # React (Vite) frontend
+    ├── public/
+    ├── src/
+    │   ├── components/      # Header, Footer, TaxiBooking, etc.
+    │   ├── context/         # Auth context
+    │   ├── pages/           # Home, Hotels, Flights, CarRental, Attractions, Taxi, Dashboard, Login, Register
+    │   ├── App.jsx
+    │   └── main.jsx
+    └── .gitignore    
 ```
 
 ---
